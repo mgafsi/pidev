@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="BorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="664.0" prefWidth="1161.0" stylesheets="com/thebenchwarmers/View/css/style_panel.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.thebenchwarmers.View.Controller.MyMenuFXMLController">
+   <top>
+      <HBox prefHeight="110.0" prefWidth="1231.0" style="-fx-background-color: WHITE;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="TOP_CENTER" prefHeight="76.0" prefWidth="1161.0" style="-fx-background-radius: 200; -fx-background-color: GRIS;" HBox.hgrow="ALWAYS">
+               <opaqueInsets>
+                  <Insets right="25.0" />
+               </opaqueInsets>
+               <children>
+                  <FontAwesomeIconView glyphName="HOME" onMouseClicked="#ToHome" size="60" strokeType="INSIDE" style="-fx-cursor: hand;" wrappingWidth="59.71428680419922" />
+               </children>
+            </HBox>
+         </children></HBox>
+   </top>
+   <left>
+      <VBox maxWidth="-Infinity" prefHeight="614.0" prefWidth="196.0" style="-fx-background-color: #FBFBFE; -fx-border-radius: 10;" styleClass="cursor_hand" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER_LEFT" onMouseClicked="#Profile" prefHeight="57.0" prefWidth="199.0" style="-fx-background-radius: 100;" styleClass="hover_border" stylesheets="@../CssPackage/style_Panel.css">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="5.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <children>
+                  <HBox prefHeight="33.0" prefWidth="179.0">
+                     <children>
+                        <Text fx:id="nbr" fill="#464646" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="16.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="-13.0" />
+                           </HBox.margin>
+                        </Text>
+                        <FontAwesomeIconView fx:id="notif" fill="#ff0042" glyphName="BELL" onMouseClicked="#notification" size="20" wrappingWidth="23.333343505859375">
+                           <cursor>
+                              <Cursor fx:constant="OPEN_HAND" />
+                           </cursor>
+                           <HBox.margin>
+                              <Insets left="5.0" right="-10.0" />
+                           </HBox.margin>
+                        </FontAwesomeIconView>
+                        <ImageView fitHeight="38.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <HBox.margin>
+                              <Insets left="70.0" />
+                           </HBox.margin>
+                           <image>
+                              <Image url="@img/icons8-contacts-filled-50.png" />
+                           </image>
+                        </ImageView>
+                        <Text fx:id="user" fill="#545252" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="51.251953125">
+                           <font>
+                              <Font name="Berlin Sans FB" size="12.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" onMouseClicked="#AjoutP" styleClass="hover_border" stylesheets="@../CssPackage/style_Panel.css">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <children>
+                  <FontAwesomeIconView fill="#2a00e4" glyphName="PLUS" size="25" />
+                  <Text onMouseClicked="#AjoutP" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Quicksand; -fx-font-weight: bold; -fx-fill: #749fe8;" text="Ajouter Evénement">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" onMouseClicked="#AfficheP" styleClass="hover_border" stylesheets="@../CssPackage/style_Panel.css">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <children>
+                  <FontAwesomeIconView fill="#1cbc9c" glyphName="LIST" size="25" text="" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Quicksand; -fx-font-weight: bold; -fx-fill: #749fe8;" text="Les évenements">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" onMouseClicked="#CommandeP" styleClass="hover_border" stylesheets="@../CssPackage/style_Panel.css">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <children>
+                  <FontAwesomeIconView fill="#ff001a" glyphName="CIRCLE_ALT_NOTCH" size="25" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Quicksand; -fx-font-weight: bold; -fx-fill: #749fe8;" text="Mes évenements">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" onMouseClicked="#Statistique" styleClass="hover_border" stylesheets="@../CssPackage/style_Panel.css">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <children>
+                  <FontAwesomeIconView fill="#15f800" glyphName="ARCHIVE" size="25" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Quicksand; -fx-font-weight: bold; -fx-fill: #749fe8;" text="Mes Participations">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <padding>
+            <Insets top="25.0" />
+         </padding>
+      </VBox>
+   </left>
+   <opaqueInsets>
+      <Insets right="22.0" top="223.0" />
+   </opaqueInsets>
+</BorderPane>

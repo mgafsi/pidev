@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootPane" focusTraversable="true" prefHeight="488.0" prefWidth="796.0" style="-fx-background-color: *;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.thebenchwarmers.View.Controller.LoginController">
+    <stylesheets>
+        <URL value="@/com/thebenchwarmers/View/css/login.css" />
+    </stylesheets>
+   <children>
+      <ImageView fitHeight="314.0" fitWidth="254.0" layoutX="68.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/logo.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="user" layoutX="505.0" layoutY="228.0" prefHeight="26.0" prefWidth="163.0" promptText="Username" stylesheets="@css/login.css" />
+      <JFXPasswordField fx:id="pwdd" layoutX="505.0" layoutY="273.0" prefHeight="18.0" prefWidth="163.0" promptText="password" stylesheets="@css/login.css" />
+      <ImageView fitHeight="26.0" fitWidth="32.0" layoutX="455.0" layoutY="230.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/icons8-personne-homme-40.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="455.0" layoutY="273.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/icons8-ouvrir-64.png" />
+         </image>
+      </ImageView>
+      <!--<JFXButton buttonType="RAISED" layoutX="589.0" layoutY="369.0" prefHeight="26.0" prefWidth="59.0" ripplerFill="BLACK" stylesheets="@css/login.css" text="Sign up" textAlignment="CENTER" textFill="#b2859b" viewOrder="10.0" />-->
+      <JFXButton buttonType="RAISED" layoutX="589.0" layoutY="369.0" prefHeight="26.0" prefWidth="59.0" ripplerFill="BLACK" stylesheets="@css/login.css" text="Sign up" textAlignment="CENTER" textFill="#b2859b" />
+      <JFXButton buttonType="RAISED" layoutX="616.0" layoutY="314.0" onAction="#loginToMain" prefHeight="26.0" prefWidth="59.0" ripplerFill="#2b09b5" stylesheets="@css/login.css" text="Log in" textFill="#43709a" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXCheckBox layoutX="481.0" layoutY="318.0" prefHeight="18.0" prefWidth="112.0" stylesheets="@css/login.css" text="Remember me" textFill="#43709a" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </JFXCheckBox>
+      <JFXButton disable="true" layoutX="486.0" layoutY="369.0" stylesheets="@css/login.css" text="Not a member ?" />
+      <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="656.0" layoutY="369.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/icons8-aide-64.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

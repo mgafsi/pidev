@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="487.0" prefWidth="458.0" style="-fx-background-color: 100; -fx-background-radius: 100;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.thebenchwarmers.View.Controller.AdminEvController">
+   <children>
+      <JFXListView fx:id="ListView_Produits" layoutX="13.0" layoutY="3.0" prefHeight="480.0" prefWidth="437.0" style="-fx-background-radius: 0;" />
+   </children>
+</AnchorPane>

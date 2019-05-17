@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" nodeOrientation="LEFT_TO_RIGHT" prefHeight="549.0" prefWidth="708.0" style="-fx-background-color: white;" styleClass="updateScreen" stylesheets="@../assets/mymenufxml.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.thebenchwarmers.View.Controller.UpdateEvController">
+   <children>
+
+       
+       
+             
+
+      <Button fx:id="update_evenement" layoutX="534.0" layoutY="471.0" mnemonicParsing="false" onAction="#update_evenement" style="-fx-background-color: #3a9e5a;" text="Update">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <JFXTextField fx:id="nom" focusColor="#2bff00" labelFloat="true" layoutX="194.0" layoutY="58.0" prefHeight="25.0" prefWidth="200.0" promptText="Nom evenement" unFocusColor="#d22929" />
+      <JFXTextArea fx:id="description" layoutX="196.0" layoutY="275.0" prefHeight="118.0" prefWidth="466.0" promptText="description" />
+      <JFXTextField fx:id="adresse" focusColor="#e037c4" labelFloat="true" layoutX="454.0" layoutY="58.0" prefHeight="25.0" prefWidth="171.0" promptText="Adresse " unFocusColor="BLACK" />
+      <RadioButton fx:id="gratuit" layoutX="197.0" layoutY="139.0" mnemonicParsing="false" onAction="#change" text="Gratuit" />
+      <RadioButton fx:id="payant" layoutX="294.0" layoutY="139.0" mnemonicParsing="false" onAction="#change" text="Payant" />
+      <TextField fx:id="prix_ev" layoutX="460.0" layoutY="127.0" promptText="Prix" />
+      <JFXDatePicker fx:id="datedeb" defaultColor="#3a9e5a" layoutX="194.0" layoutY="189.0" prefHeight="25.0" prefWidth="200.0" promptText="date debut" />
+      <JFXDatePicker fx:id="datefin" defaultColor="#f60a0a" layoutX="454.0" layoutY="189.0" prefHeight="25.0" prefWidth="188.0" promptText="date Fin" />
+      <ImageView fx:id="image_p" fitHeight="89.0" fitWidth="98.0" layoutX="29.0" layoutY="18.0" onDragDropped="#imageDropped" onDragOver="#imageDragOver" pickOnBounds="true" preserveRatio="true" />
+      <FontAwesomeIconView fill="#4101ff" glyphName="BULLHORN" layoutX="163.0" layoutY="77.0" size="20" />
+      <FontAwesomeIconView fill="RED" glyphName="MAP_MARKER" layoutX="429.0" layoutY="80.0" size="20" />
+      <FontAwesomeIconView fill="#fff701" glyphName="DOLLAR" layoutX="270.0" layoutY="152.0" size="20" />
+      <FontAwesomeIconView glyphName="COMMENT" layoutX="173.0" layoutY="292.0" size="20" />
+       
+       
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<HBox prefHeight="201.0" prefWidth="678.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.thebenchwarmers.View.Controller.quickview">
+   <children>
+      <ImageView fx:id="p_image" fitHeight="326.0" fitWidth="327.0" pickOnBounds="true" preserveRatio="true" />
+      <VBox prefHeight="440.0" prefWidth="232.0">
+         <children>
+            <HBox prefHeight="59.0" prefWidth="232.0">
+               <children>
+                  <Text fx:id="nom_p" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 32px; -fx-fill: red;" />
+               </children>
+            </HBox>
+            <HBox prefHeight="48.0" prefWidth="232.0">
+               <children>
+                  <FontAwesomeIconView fill="#ecef2d" glyphName="DOLLAR" size="25" />
+                  <Text fx:id="p_prix" strokeType="OUTSIDE" strokeWidth="0.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="DT">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <FontAwesomeIconView fill="#4b94eb" glyphName="COMMENT" size="25" />
+            <HBox prefHeight="43.0" prefWidth="232.0">
+               <children>
+                  <Label fx:id="p_desc" prefHeight="39.0" prefWidth="224.0">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+               </children></HBox>
+            <FontAwesomeIconView fill="#ff2d03" glyphName="MAP_MARKER" size="25" />
+            <HBox prefHeight="56.0" prefWidth="232.0">
+               <children>
+                  <Text fx:id="adresset" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                     <font>
+                        <Font name="Baskerville Old Face" size="17.0" />
+                     </font>
+                  </Text>
+               </children></HBox>
+            <HBox prefHeight="15.0" prefWidth="232.0">
+               <children>
+                  <FontAwesomeIconView glyphName="USER" size="25" />
+                  <Text fill="#0a14ce" strokeType="OUTSIDE" strokeWidth="0.0">
+                     <font>
+                        <Font name="Book Antiqua Bold Italic" size="12.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="nomorgt" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                     <font>
+                        <Font name="Baskerville Old Face" size="17.0" />
+                     </font></Text>
+               </children>
+            </HBox>
+            <HBox prefHeight="26.0" prefWidth="264.0">
+               <children>
+                  <FontAwesomeIconView fill="#1ced11" glyphName="CALENDAR" size="25" />
+                  <Text fill="#0a14ce" strokeType="OUTSIDE" strokeWidth="0.0">
+                     <font>
+                        <Font name="Book Antiqua Bold Italic" size="12.0" />
+                     </font>
+                  </Text>
+                  <FontAwesomeIconView fill="#ff0707" glyphName="CALENDAR" size="25" />
+                  <Text fx:id="date" strokeType="OUTSIDE" strokeWidth="0.0">
+                     <font>
+                        <Font name="Baskerville Old Face" size="17.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+      <ImageView fx:id="qrcode" fitHeight="107.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</HBox>

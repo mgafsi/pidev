@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" nodeOrientation="LEFT_TO_RIGHT" prefHeight="488.0" prefWidth="766.0" styleClass="AjouterScreen" stylesheets="com/thebenchwarmers/View/css/mymenufxml.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.thebenchwarmers.View.Controller.AjouterEvController">
+ 
+    <children>
+      <TextField fx:id="prix_ev" layoutX="363.0" layoutY="198.0" onKeyReleased="#checkWrittenNumber" prefHeight="31.0" prefWidth="150.0" promptText="Prix" />
+      <TextField fx:id="adresse_ev" layoutX="362.0" layoutY="54.0" prefHeight="25.0" prefWidth="317.0" promptText="Adresse" />
+      <TextField fx:id="nom_ev" layoutX="46.0" layoutY="54.0" prefHeight="25.0" prefWidth="282.0" promptText="Nom Evenement" />
+     
+      
+      <Button layoutX="452.0" layoutY="417.0" mnemonicParsing="false" onAction="#addButton" style="-fx-background-color: #69c0ef;" text="Valider">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <JFXRadioButton fx:id="payant" layoutX="196.0" layoutY="205.0" onAction="#change" text="Payant" />
+      <JFXRadioButton fx:id="gratuit" layoutX="98.0" layoutY="205.0" onAction="#change" text="Gratuit" />
+      <JFXTextArea fx:id="description_ev" focusColor="RED" labelFloat="true" layoutX="58.0" layoutY="253.0" prefHeight="97.0" prefWidth="597.0" promptText="Description de l'évenement" unFocusColor="#debe00" />
+      <ImageView fx:id="image_p" fitHeight="97.0" fitWidth="203.0" layoutX="131.0" layoutY="369.0" onDragDropped="#imageDropped" onDragOver="#imageDragOver" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/drag-and-drop-icon.png" />
+         </image>
+      </ImageView>
+      <JFXDatePicker fx:id="datedeb_ev" defaultColor="#3a9e5a" layoutX="51.0" layoutY="137.0" prefHeight="25.0" prefWidth="273.0" promptText="Date début" />
+      <JFXDatePicker fx:id="datefin_ev" defaultColor="RED" layoutX="362.0" layoutY="137.0" prefHeight="25.0" prefWidth="317.0" promptText="Date Fin" />
+      <TextField fx:id="lien" layoutX="184.0" layoutY="92.0" prefHeight="25.0" prefWidth="317.0" promptText="Lien youtube (spot)" />
+      <FontAwesomeIconView fill="#f60000" glyphName="YOUTUBE_SQUARE" layoutX="145.0" layoutY="115.0" size="30" wrappingWidth="28.952370643615723" />
+      <FontAwesomeIconView glyphName="MAP_MARKER" layoutX="342.0" layoutY="74.0" size="30.0" text="" wrappingWidth="22.85714292526245" />
+      <FontAwesomeIconView fill="#131dd9" glyphName="BULLHORN" layoutX="8.0" layoutY="71.0" size="30" />
+    
+     
+
+   
+   </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+   
+</AnchorPane>
